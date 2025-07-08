@@ -9,6 +9,7 @@ public class ObjectManager : MonoBehaviour
     void Awake()
     {
         GameObject obj = Instantiate(objPrefab, new Vector3(Random.Range(-100, 100), Random.Range(-100, 100), objPrefab.transform.position.z), Quaternion.identity);
+        objPosition = obj.transform.position;
     }
 
     // Update is called once per frame

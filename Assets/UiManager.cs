@@ -13,7 +13,7 @@ public class UiManager : MonoBehaviour
     {
         tankPosition.text = tank.transform.position + "";
         fuelPosition = fuel.GetComponent<ObjectManager>();
-        fuelPositionText.text = fuelPosition + "";
+        fuelPositionText.text = fuelPosition.objPosition + "";
     }
 
     // Update is called once per frame
